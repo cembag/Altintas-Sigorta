@@ -15,7 +15,7 @@ const ProtectedRoute = ({children}: {children: JSX.Element}): JSX.Element => {
     if(!authUser) {
       
         return (
-            <Navigate to={"/"}></Navigate>
+            <Navigate to={"/müşterilerim"}></Navigate>
         )
     }
 
