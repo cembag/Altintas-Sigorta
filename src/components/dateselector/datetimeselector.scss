@@ -1,0 +1,54 @@
+.datetime-selector {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    
+    label {
+        color: rgb(120, 120, 120);
+        font-size: 13px;
+        line-height: 13px;
+    }  
+    
+    .selector-container {
+        width: 100%;
+        height: 100%;
+        margin-top: 8px;
+        border-radius: 5px;
+        background: rgb(250,250,250);
+        border: 1px solid var(--border-color);
+        display: flex;
+
+        .selector {
+            select {
+                width: 100%;
+                height: 100%;
+                font-size: 14px;
+                font-weight: 500;
+                color: rgb(100, 100, 100);
+                text-align-last:center;
+                
+                option {
+                    width: 100%;
+                    
+                }
+            }
+        }
+        
+        .day-selector {
+            width: clamp(40px, 24%, 120px);
+            height: 100%;
+            border-right: 1px solid var(--border-color);
+        }
+        
+        .month-selector {
+            width: clamp(70px, 40%, 250px);
+            height: 100%;
+            border-right: 1px solid var(--border-color);
+        }
+        
+        .year-selector {
+            width: clamp(60px, 36%, 180px);
+            height: 100%;
+        }
+    }
+}
